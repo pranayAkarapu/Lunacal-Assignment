@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <style>
+      .active {
+        border-bottom-width: 4px;
+        border-color: #64748b;
+      }
+    </style>
+</head>
+<body>
+  <div class="flex">
+    <main class="w-full flex flex-col space-y-8">
+      <!-- Tabs Widget -->
+      <section class=" bg-gray-800 text-white rounded-lg p-4 shadow-lg">
+        <nav class="tabs flex justify-center items-center space-x-2">
+          <button type="button" id="aboutButton" class="tab bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-lg">About Me</button>
+          <button type="button" id="expButton" class="tab bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-lg">Experiences</button>
+          <button type="button" id="recButton" class="tab bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-lg">Recommended</button>
+        </nav>
+        <article id="content" class="mt-4">
+          <!-- Content for the selected tab will be displayed here -->
+        </article>
+      </section>
+          
+      <!-- Gallery Widget -->
+      <section class="gallery-widget bg-gray-800 text-white rounded-lg p-4 shadow-lg">
+        <header class="flex justify-between items-center mb-4">
+          <h2 class="text-lg font-semibold">Gallery</h2>
+          <button type="button" id="addImageButton" class="bg-orange-500 text-white py-2 px-4 rounded-lg">+ Add Image</button>
+        </header>
+        <div id="imagesDiv" class="flex justify-center items-center space-x-4 overflow-hidden">
+          <img src="" id="img1" alt="Image 1" class="rounded-lg w-56  object-cover">
+          <img src="" id="img2" alt="Image 2" class="rounded-lg w-56  object-cover">
+          <img src="" id="img3" alt="image-3" class="rounded-lg w-56  object-cover">
+        </div>
+        <nav class="gallery-navigation flex justify-end mt-4 space-x-2">
+          <button type="button" class="bg-orange-500 text-white py-2 px-4 rounded-lg">←</button>
+          <button type="button" class="bg-orange-500 text-white py-2 px-4 rounded-lg">→</button>
+        </nav>
+      </section>
+    </main>
+  </div>
+<script src="script.js" charset="UTF-8"></script>
+</body>
+</html>
